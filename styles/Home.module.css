@@ -1,11 +1,3 @@
-/* {
-
-  primary: '#000000',
-  secondary: '#40c5fb',
-  grey: '#8892b0',
-  lightGrey: '#ccd6f6'
-
-} */
 .primary_color {
   color: #40c5fb;
 }
@@ -14,19 +6,22 @@
   padding: 0px;
   margin: 0px;
   background-color: black;
-}
-
-.container_fluid {
-  max-width: 1940px;
+  max-width: 1380px;
   margin: auto;
 }
 
-.container {
-  max-width: 90%;
+.projectContainer {
+  max-width: 1054px;
   margin: auto;
+  padding: 2.5% 0px;
+  /* height: 100vh; */
 }
 
 .navigationContainer {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -84,16 +79,14 @@
   font-weight: bold;
 }
 
-.homeContainer {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .box {
   width: 70%;
   margin-left: 50px;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .name {
@@ -105,12 +98,90 @@
 
 .scope {
   color: #8892b0;
-  font-size: 70px;
+  font-size: 50px;
   margin: 0px;
   padding: 0px;
 }
 
 .discription {
   color: #8892b0;
-  font-size: 30px;
+  font-size: 25px;
+}
+
+.aboutContainer {
+  align-items: center;
+}
+
+.aboutBox {
+  display: flex;
+}
+
+.aboutBox div {
+  width: 50%;
+
+}
+
+.aboutBox div p {
+  font-size: 20px;
+
+}
+
+.aboutBox div p span {
+  color: #40c5fb;
+}
+
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  align-content: center;
+
+}
+
+.aboutSection img {
+  /* width: 200px; */
+  /* height: 250px; */
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  margin: 20px;
+  z-index: 5;
+}
+
+.img_border {
+  /* width: 200px; */
+  width: 150px;
+  height: 307px;
+  border: 2px solid #40c5fb;
+  border-radius: 5px;
+  position: relative;
+  bottom: 297px;
+  left: 30px;
+}
+
+.about_Heading {
+  color: #ccd6f6;
+  margin-bottom: 0px;
+}
+
+.about_Heading div {
+  border-bottom: 1px solid #ccd6f6;
+  width: 300px;
+  position: relative;
+  top: -15px;
+  left: 150px;
+}
+
+.skill_Items {
+  display: flex;
+}
+
+.skill_Items ul {
+  padding-left: 10px;
+}
+
+.skill_Items ul li {
+  color: #8892b0;
+  margin-bottom: 15px;
 }

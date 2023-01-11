@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 
 import Navigation from '../component/Navigation'
 import HomeComp from '../component/Home'
-const inter = Inter({ subsets: ['latin'] })
+import AboutComp from '../component/About'
 
 export default function Home() {
   return (
@@ -18,9 +18,10 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Navigation />
-        <div className={styles.container}>
+        {/* <div className={styles.container}> */}
           <HomeComp />
-        </div>
+          <AboutComp />
+        {/* </div> */}
       </main>
     </>
   )
