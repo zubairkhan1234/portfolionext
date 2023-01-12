@@ -224,10 +224,10 @@
   margin: 20px;
 }
 
-.work_Box div {
-  /* width: 50%; */
+/* .work_Box div {
+  width: 50%;
 
-}
+} */
 
 .work_Box div ul {
   display: flex;
@@ -256,11 +256,6 @@
 .work_Box div p span {
   color: #40c5fb;
 }
-
-
-
-
-
 
 .skill_Items {
   display: flex;
