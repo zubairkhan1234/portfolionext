@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css'
 import Navigation from '../component/Navigation'
 import HomeComp from '../component/Home'
 import AboutComp from '../component/About'
+import WorkComp from '../component/Work'
 
 export default function Home() {
   return (
@@ -19,8 +20,9 @@ export default function Home() {
       <main className={styles.main}>
         <Navigation />
         {/* <div className={styles.container}> */}
-          <HomeComp />
-          <AboutComp />
+        {/* <HomeComp /> */}
+        {/* <AboutComp /> */}
+        {/* <WorkComp /> */}
         {/* </div> */}
       </main>
     </>

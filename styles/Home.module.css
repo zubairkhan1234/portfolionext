@@ -108,6 +108,10 @@
   font-size: 25px;
 }
 
+
+/* style for about  */
+
+
 .aboutContainer {
   align-items: center;
 }
@@ -133,7 +137,6 @@
 .aboutSection {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   align-content: center;
 
@@ -179,9 +182,86 @@
 
 .skill_Items ul {
   padding-left: 10px;
+  padding-right: 20px;
 }
 
 .skill_Items ul li {
   color: #8892b0;
   margin-bottom: 15px;
+}
+
+
+/* style for work experience  */
+
+.work_Heading {
+  color: #ccd6f6;
+  margin-bottom: 0px;
+}
+
+.work_Heading div {
+  border-bottom: 1px solid #ccd6f6;
+  width: 300px;
+  position: relative;
+  top: -15px;
+  left: 330px;
+}
+
+.work_Box {
+  display: flex;
+  flex-direction: row;
+}
+
+.work_Section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+
+}
+
+.work_Section img {
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.work_Box div {
+  /* width: 50%; */
+
+}
+
+.work_Box div ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.work_Box div ul li {
+  color: #8892b0;
+  list-style: none;
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.work_Box div p {
+  font-size: 20px;
+
+}
+
+.work_discription {
+  color: #8892b0;
+  text-align: right;
+}
+
+
+.work_Box div p span {
+  color: #40c5fb;
+}
+
+
+
+
+
+
+.skill_Items {
+  display: flex;
 }
