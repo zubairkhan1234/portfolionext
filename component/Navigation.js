@@ -1,55 +1,37 @@
 import React from 'react'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 function Navigation() {
     return (
-        // <div className={`${styles.navigationContainer} ${styles.container}`}>
-        //     <div>
-        //         {/* <h1>Muhammad zubair</h1> */}
-        //         <h1>Logo Name</h1>
-        //     </div>
-        //     <div className={styles.navigationList} >
-        //         <ul>
-        //             <li>
-        //                 <Link href={'#'}>About</Link>
-        //             </li>
-        //             <li>
-        //                 <Link href={'#'}>Experience</Link>
-        //             </li>
-        //             <li>
-        //                 <Link href={'#'}>Work</Link>
-        //             </li>
-        //             <li>
-        //                 <Link href={'#'}>Contact</Link>
-        //             </li>
-        //         </ul>
-        //         <div className={styles.sm_btn}>
-        //             <button onClick={() => alert('we will add resume')}>Resume</button>
-        //         </div>
-
-        //     </div>
-        // </div>
-
-
-        <div class="card text-center">
-            <div class="card-header">
-                <ul class="nav nav-pills card-header-pills">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div className="text-center">
+            <div className={`${styles.navigationContainer} container d-flex justify-content-between`}>
+                <div>
+                    <span>{'< '}</span>
+                    <span className={styles.logo_home}>Zubair</span>
+                    <span>{' />'}</span>
+                </div>
+                <div>
+                    <ul className="nav nav-pills card-header-pills">
+                        <li className="nav-item">
+                            <a className="nav-link" href="#"><i className="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#"><i className="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link " href="#" tabindex="-1" aria-disabled="true"><i className="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link " href="#" tabindex="-1" aria-disabled="true"><i className="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link " href="#" tabindex="-1" aria-disabled="true"><i className="fa-solid fa-bars"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     )

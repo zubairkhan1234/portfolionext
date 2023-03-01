@@ -1,3 +1,15 @@
+/* Navigation Css */
+
+.logo_home {
+  font-family: 'Agustina-Signature';
+  font-size: 25px;
+}
+
+.navigationContainer {
+  height: 200px;
+}
+
+/* end of navigation container */
 .primary_color {
   color: #40c5fb;
 }
@@ -5,7 +17,7 @@
 .main {
   padding: 0px;
   margin: 0px;
-  background-color: black;
+  /* background-color: black; */
   max-width: 1380px;
   margin: auto;
 }
