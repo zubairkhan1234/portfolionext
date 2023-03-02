@@ -22,13 +22,13 @@ function Navigation() {
                             <a className="nav-link" href="#"><i className="fa-brands fa-linkedin-in"></i></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " href="#" tabindex="-1" aria-disabled="true"><i className="fa-brands fa-instagram"></i></a>
+                            <a className="nav-link " href="#" tabIndex="-1" aria-disabled="true"><i className="fa-brands fa-instagram"></i></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " href="#" tabindex="-1" aria-disabled="true"><i className="fa-brands fa-twitter"></i></a>
+                            <a className="nav-link " href="#" tabIndex="-1" aria-disabled="true"><i className="fa-brands fa-twitter"></i></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " href="#" tabindex="-1" aria-disabled="true"><i className="fa-solid fa-bars"></i></a>
+                            <a className="nav-link " href="#" tabIndex="-1" aria-disabled="true"><i className="fa-solid fa-bars"></i></a>
                         </li>
                     </ul>
                 </div>

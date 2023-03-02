@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="description" content="Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://kit.fontawesome.com/53955fe784.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/53955fe784.js" crossOrigin="anonymous"></script>
       </Head>
       <main className={styles.main}>
         <Navigation />
