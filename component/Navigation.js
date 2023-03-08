@@ -6,11 +6,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Navigation() {
     return (
-        <div className="text-center">
+        <div className={styles.navigation_container_fluid}>
             <div className={`${styles.navigationContainer} container d-flex justify-content-between`}>
-                <div>
+                <div className={styles.navigation_logo_container}>
                     <span>{'< '}</span>
-                    <span className={styles.logo_home}>Zubair</span>
+                    <span className={styles.navigation_logo}>Zubair</span>
                     <span>{' />'}</span>
                 </div>
                 <div>

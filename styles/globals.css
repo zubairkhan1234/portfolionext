@@ -1,7 +1,13 @@
+:root {
+    --black: #1f1f1f;
+    --white: white;
+}
+
 body {
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    background-color: var(--black) !important;
+    color: var(--white) !important;
 }
 
 @font-face {
