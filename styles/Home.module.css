@@ -19,6 +19,12 @@
   font-size: 25px;
   color: var(--white);
 }
+
 /* end of navigation container */
 
 /* header style start */
+
+.headerImge {
+  width: 350px;
+  height: 400px;
+}

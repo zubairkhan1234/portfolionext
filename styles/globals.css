@@ -21,3 +21,12 @@ body {
 .fa-solid {
     color: red !important;
 }
+
+.Typewriter {
+    color: green !important;
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+.heade_container_child {
+    height: calc(100vh - 60px) !important; 
+}
