@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-import aboutImage from '../public/images/about.jpg'
+import aboutImage from '/images/about.jpg'
 function AboutComp() {
     return (
         <div className={styles.projectContainer}>

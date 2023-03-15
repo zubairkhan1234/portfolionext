@@ -8,12 +8,15 @@ import Image from 'next/image';
 function HomeComp() {
     return (
         <section className='container'>
-            <div className={`row flex-md-row-reverse justify-content-center text-center align-items-center h-100 ${styles.heade_container_child}`}>
+            <div className={`row flex-md-row-reverse justify-content-center text-center align-items-center ` + styles.heade_container_child}>
                 <div className='col-md-6'>
-                    <Image src="/images/home/header.png" height={1400} width={1000} className={styles.headerImge} />
-                </div>
-                <div className='col-md-6 text-start' >
+                    <div className={"shadow-lg p-3 mb-5 bg-body rounded " + styles.header_image_shadow}>
 
+                    </div>
+                    <Image src="./images/home/header.png" height={1400} width={1000} className={styles.headerImge} />
+                </div>
+
+                <div className='col-md-6 text-start' >
                     <h1 className='fs-2'>WELCOME TO MY PORTFOLIO</h1>
                     <h1>Hi, I’m Muhammad Zubair</h1>
                     <div style={{ display: 'flex' }}>
@@ -26,11 +29,10 @@ function HomeComp() {
                                 deleteSpeed: 20,
                                 loop: true,
                             }}
-
                         />
                     </div>
+                    
                 </div>
-
             </div>
         </section>
     )

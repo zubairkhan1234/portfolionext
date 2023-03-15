@@ -26,5 +26,21 @@
 
 .headerImge {
   width: 350px;
-  height: 400px;
+  height: 450px;
+}
+
+.heade_container_child {
+  height: calc(100vh - 60px) !important;
+}
+
+.header_image_shadow {
+  position: absolute;
+  height: 450px;
+  margin-bottom: 400px;
+  right: 210px;
+  width: 375px;
+  z-index: -10;
+  background-color: var(--black) !important;
+  box-shadow: 0 0rem 20px -12px rgb(255, 255, 255) !important;
+
 }

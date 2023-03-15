@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-import aboutImage from '../public/images/work.png'
+import aboutImage from '/images/work.png'
 function WorkComp() {
     return (
         <div className={styles.projectContainer}>

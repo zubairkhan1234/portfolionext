@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 
+
 import Navigation from '../component/Navigation'
 import HomeComp from '../component/Home'
 import AboutComp from '../component/About'
