@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+.yarn/install-state.gz
 
 # testing
 /coverage
@@ -23,7 +24,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
 
 # local env files
 .env*.local
@@ -31,11 +31,6 @@ yarn-error.log*
 # vercel
 .vercel
 
-
-
-# https://wordpressriverthemes.com/HTML/drake/home6.html
-# https://preview.themeforest.net/item/drake-personal-portfolio-html/full_screen_preview/43789350
-# https://preview.themeforest.net/item/inbio-personal-portfolio-wordpress-theme/full_screen_preview/39221039
-# https://theme.dsngrid.com/blackdsn/dark/photographer.html
-# https://preview.themeforest.net/item/blackdsn-creative-ajax-portfolio-html-template/full_screen_preview/43955984
-# costum fonts is not working after creating build
+# typescript
+*.tsbuildinfo
+next-env.d.ts
