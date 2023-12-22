@@ -3,9 +3,12 @@ import React from "react";
 import ProfileImage from '../../assets/containerImages/home-dark.png';
 import { FaDownload } from "react-icons/fa6";
 
-export default function HomeComp() {
+export default function AboutComp() {
     return (
-        <div className="row container d-flex justify-space-between h-100">
+        <div className="row container d-flex justify-space-between">
+            <div className="col-6 d-flex justify-content-end">
+                <Image src={ProfileImage} width={'100%'} className="bdr-100" alt="Profile Image" />
+            </div>
             <div className="col-6 d-flex flex-column justify-content-center">
                 <h1>HI</h1>
                 <h1> It's Muhammad Zubair </h1>
@@ -24,9 +27,8 @@ export default function HomeComp() {
                 <FaDownload />
                 <button>Get in Touch</button>
             </div>
-            <div className="col-6 d-flex justify-content-end">
-                <Image src={ProfileImage} width={'100%'} className="bdr-100" alt="Profile Image" />
-            </div>
+
+
         </div>
     )
 }
