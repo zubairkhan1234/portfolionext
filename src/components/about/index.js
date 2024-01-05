@@ -5,7 +5,7 @@ import { FaDownload } from "react-icons/fa6";
 
 export default function AboutComp() {
     return (
-        <div className="row container d-flex justify-space-between">
+        <div className="row container h-100 d-flex justify-space-between">
             <div className="col-6 d-flex justify-content-end">
                 <Image src={ProfileImage} width={'100%'} className="bdr-100" alt="Profile Image" />
             </div>
