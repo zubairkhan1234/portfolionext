@@ -17,6 +17,7 @@ body {
 
 .color-white {
     color: #ffffff;
+    font-family: var(--font-poppins);
 }
 
 .color-gray {
@@ -44,6 +45,9 @@ body {
     font-size: 18px;
 }
 
+.red-hover:hover{
+    color: #df5646;
+}
 
 
 @media (min-width: 1200px) {

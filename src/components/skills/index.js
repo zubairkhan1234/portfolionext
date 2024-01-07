@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import ProfileImage from "../../assets/containerImages/services-dark.png";
@@ -5,21 +6,29 @@ import { GoBrowser } from "react-icons/go";
 import { BsDatabase } from "react-icons/bs";
 import { PiDeviceMobileLight } from "react-icons/pi";
 import { GrServerCluster } from "react-icons/gr";
-
-export default function ServicesComp() {
+// import ProgressBar from "@ramonak/react-progress-bar";
+export default function SkillsSectionComp() {
   return (
     <div className="row container d-flex m-auto justify-space-between h-100">
-      <div className="row container  d-flex justify-space-between">
+      <div className="row container d-flex justify-space-between">
+        <div className="col-6 d-flex justify-content-end">
+          <Image
+            src={ProfileImage}
+            width={"100%"}
+            className="bdr-100"
+            alt="Profile Image"
+          />
+        </div>
         <div className="col-6 d-flex flex-column justify-content-center">
           <div>
             <h1>
-              What Services I Provde{" "}
-              <span className="red-text"> To My Clients</span> In Here.
+              As A Designer I Am Good At Fit With Few{" "}
+              <span className="red-text">Skills.</span>
             </h1>
             <p className="color-gray">
-              I always want to be able to meet the goals of my clients, I value
-              my services as a designer through my work.{" "}
-              <span className="red-text"> You may like my services.</span>
+              All desigener have good skills to make sure satisfied their
+              clints, As a designer I am also specialised few{" "}
+              <span className="red-text">skills.</span>
             </p>
           </div>
           <div className="d-flex justify-content-between">
@@ -42,6 +51,8 @@ export default function ServicesComp() {
               </div>
             </div>
             <div className="col-7">
+              {/* <ProgressBar completed={60} animateOnRender={false} /> */}
+
               <div className="d-flex col-12 my-3 align-items-center">
                 <div className="serviece-icon-circle">
                   <PiDeviceMobileLight />
@@ -60,14 +71,6 @@ export default function ServicesComp() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="col-6 d-flex justify-content-end">
-          <Image
-            src={ProfileImage}
-            width={"100%"}
-            className="bdr-100"
-            alt="Profile Image"
-          />
         </div>
       </div>
     </div>

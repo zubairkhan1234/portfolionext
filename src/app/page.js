@@ -5,6 +5,7 @@ import Speciality from "@/components/speciality";
 import NavBarComp from "@/components/navbar";
 import AboutComp from "@/components/about";
 import ServicesComp from "@/components/services";
+import SkillsSectionComp from "@/components/skills";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <HomeComp />
         <AboutComp />
         <ServicesComp />
+        <SkillsSectionComp />
 
         {/* <Speciality /> */}
       </div>
