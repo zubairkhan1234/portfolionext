@@ -10,9 +10,9 @@ export default function ServicesComp() {
   return (
     <div className="row container d-flex m-auto justify-space-between h-100">
       <div className="row container  d-flex justify-space-between">
-        <div className="col-6 d-flex flex-column justify-content-center">
+        <div className="col-12  col-md-6 d-flex flex-column justify-content-center">
           <div>
-            <h1>
+            <h1 className="font-32">
               What Services I Provde{" "}
               <span className="red-text"> To My Clients</span> In Here.
             </h1>
@@ -61,11 +61,11 @@ export default function ServicesComp() {
             </div>
           </div>
         </div>
-        <div className="col-6 d-flex justify-content-end">
+        <div className="col-12  col-md-6 d-flex justify-content-end">
           <Image
             src={ProfileImage}
             width={"100%"}
-            className="bdr-100"
+            className="bdr-100 w-100 object-fit-contain"
             alt="Profile Image"
           />
         </div>

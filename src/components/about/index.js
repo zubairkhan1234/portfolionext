@@ -23,7 +23,7 @@ export default function AboutComp() {
   //     },
   //   };
   return (
-    <div className="row container h-100 d-flex justify-space-between">
+    <div className="row container flex-md-row flex-column-reverse h-100 m-auto  d-flex justify-space-between">
       {/* <motion.div
         className="absolute right-0 -bottom-12 w-full sm:w-4/5 md:-bottom-36 md:w-[950px]"
         initial="hide"
@@ -31,18 +31,18 @@ export default function AboutComp() {
         exit="hide"
         variants={introPictureVariants}
       > */}
-      <div className="col-6 d-flex justify-content-end">
+      <div className="col-12  col-md-6  d-flex justify-content-end">
         <Image
           src={ProfileImage}
           width={"100%"}
-          className="bdr-100"
+          className="bdr-100 w-100 object-fit-contain image-flip"
           alt="Profile Image"
         />
       </div>
       {/* </motion.div> */}
-      <div className="col-6 d-flex flex-column justify-content-center">
+      <div className="col-12  col-md-6 d-flex flex-column justify-content-center">
         <h1>HI</h1>
-        <h1>
+        <h1 className="font-32">
           {" "}
           It's <span className="red-text">Muhammad Zubair</span>{" "}
         </h1>

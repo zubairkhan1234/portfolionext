@@ -1,5 +1,7 @@
 import React from "react";
 import './globals.css'
+import '../style/mediaQuery.css'
+import "../style/style.css";
 import HomeComp from "@/components/home";
 import Speciality from "@/components/speciality";
 import NavBarComp from "@/components/navbar";

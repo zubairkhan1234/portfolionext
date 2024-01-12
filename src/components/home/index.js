@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect } from "react";
-import "../../style/style.css";
 import ProfileImage from "../../assets/containerImages/home-dark.png";
 // import { FaDownload } from "react-icons/fa6";
 import Aos from "aos";
+import "aos/dist/aos.css";
 import Typewriter from "typewriter-effect";
 // import { motion } from "framer-motion";
 import {
@@ -34,8 +34,8 @@ export default function HomeComp() {
   //   };
   return (
     <div className="row container d-flex m-auto justify-space-between h-100">
-      <div className="col-12 col-md-5 d-flex flex-column justify-content-center">
-        <h1 className="font-32">HI</h1>
+      <div data-aos="flip-left" className="col-12 col-md-6 d-flex flex-column justify-content-center">
+        <h1 className="font-32 font-Playfair">HI</h1>
         <h1 className="font-32">
           {" "}
           It's <span className="red-text">Muhammad Zubair</span>
@@ -70,7 +70,7 @@ export default function HomeComp() {
         <a className="red-btn col-12 col-md-5  justify-content-between">
           Get in Touch <FaLongArrowAltRight />
         </a>
-        <ul className="p-0 d-flex col-12 col-md-3 justify-content-between mt-5">
+        <ul className="p-0 d-flex col-3 justify-content-between mt-5">
           <li className="list-style-none">
             <FaFacebookF className="color-gray red-hover" />
           </li>
@@ -82,7 +82,7 @@ export default function HomeComp() {
           </li>
         </ul>
       </div>
-      <div className="col-12 col-md-7 d-flex justify-content-end">
+      <div className="col-12 col-md-6 d-flex justify-content-end">
         {/* <motion.div
           className="absolute right-0 -bottom-12 w-full sm:w-4/5 md:-bottom-36 md:w-[950px]"
           initial="hide"
@@ -93,7 +93,7 @@ export default function HomeComp() {
         <Image
           src={ProfileImage}
           width={"100%"}
-          className="bdr-100"
+          className="bdr-100 w-100 object-fit-contain"
           alt="Profile Image"
         />
         {/* </motion.div> */}

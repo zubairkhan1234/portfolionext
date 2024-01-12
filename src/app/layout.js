@@ -1,7 +1,6 @@
 'use client'
 import { useEffect } from 'react';
-import { Poppins } from 'next/font/google'
-import './globals.css'
+import { Poppins, Playfair_Display } from 'next/font/google'
 // import 'bootstrap/dist/js/bootstrap.min.js';
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -9,7 +8,13 @@ const poppins = Poppins({
   subsets: ['latin'],
   variable: '--font-poppins',
   display: 'swap',
-  weight:"500"
+  weight: "500"
+})
+const playfair_Display = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-Playfair',
+  display: 'swap',
+  weight: "500"
 })
 
 export default function RootLayout({ children }) {
@@ -18,8 +23,8 @@ export default function RootLayout({ children }) {
   }, []);
 
   return (
-    <html lang="en" className={poppins.variable}>
+    <html lang="en" className={`${poppins.variable} ${playfair_Display.variable}`} >
       <body>{children}</body>
-    </html>
+    </ html>
   )
 }
