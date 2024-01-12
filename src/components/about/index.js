@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import ProfileImage from "../../assets/containerImages/home-dark.png";
 import { FaDownload } from "react-icons/fa6";
+import ProgressBar from "@ramonak/react-progress-bar";
 // import { motion } from "framer-motion";
 // import Aos from "aos";
 export default function AboutComp() {
@@ -38,6 +39,7 @@ export default function AboutComp() {
           className="bdr-100 w-100 object-fit-contain image-flip"
           alt="Profile Image"
         />
+       
       </div>
       {/* </motion.div> */}
       <div className="col-12  col-md-6 d-flex flex-column justify-content-center">
@@ -46,7 +48,7 @@ export default function AboutComp() {
           {" "}
           It's <span className="red-text">Muhammad Zubair</span>{" "}
         </h1>
-
+        
         <p className="font-18 color-white ">
           Currently working for
           <span className="red-text"> web</span> developement

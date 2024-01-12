@@ -13,6 +13,7 @@ import {
   FaTwitter,
   FaInstagram,
 } from "react-icons/fa";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 export default function HomeComp() {
   useEffect(() => {
@@ -59,6 +60,8 @@ export default function HomeComp() {
             loop: true,
             delay: 90,
             skipAddStyles: false,
+            cursorClassName: "font-32 font-Playfair",
+            wrapperClassName: "font-32 font-Playfair"
           }}
         />
         <p className="font-18 color-gray">

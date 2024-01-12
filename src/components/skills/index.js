@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ProfileImage from "../../assets/containerImages/services-dark.png";
 import { GoBrowser } from "react-icons/go";
 import { BsDatabase } from "react-icons/bs";
@@ -8,11 +8,17 @@ import { PiDeviceMobileLight } from "react-icons/pi";
 import { GrServerCluster } from "react-icons/gr";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import ProgressBar from "@ramonak/react-progress-bar";
 // import ProgressBar from "@ramonak/react-progress-bar";
 export default function SkillsSectionComp() {
+  const [isAnimate, setisAnimate] = useState(false)
   useEffect(() => {
     Aos.init()
+    setisAnimate(true)
   }, [])
+  console.log(isAnimate)
+
+
   return (
     <div className="row container d-flex m-auto justify-space-between h-100">
       <div className="row flex-md-row flex-column-reverse container d-flex  justify-space-between">
@@ -30,6 +36,7 @@ export default function SkillsSectionComp() {
               As A Designer I Am Good At Fit With Few{" "}
               <span className="red-text">Skills.</span>
             </h1>
+            <ProgressBar animateOnRender={isAnimate} completed={80} />
             <p className="color-gray">
               All desigener have good skills to make sure satisfied their
               clints, As a designer I am also specialised few{" "}
