@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect } from "react";
-import ProfileImage from "../../assets/containerImages/home-dark.png";
+import ProfileImage from "./../assets/containerImages/home-dark.png";
 // import { FaDownload } from "react-icons/fa6";
 import Aos from "aos";
 import "aos/dist/aos.css";

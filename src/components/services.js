@@ -1,46 +1,25 @@
-"use client";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import ProfileImage from "../../assets/containerImages/services-dark.png";
+import React from "react";
+import ProfileImage from "./../assets/containerImages/services-dark.png";
 import { GoBrowser } from "react-icons/go";
 import { BsDatabase } from "react-icons/bs";
 import { PiDeviceMobileLight } from "react-icons/pi";
 import { GrServerCluster } from "react-icons/gr";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import ProgressBar from "@ramonak/react-progress-bar";
-// import ProgressBar from "@ramonak/react-progress-bar";
-export default function SkillsSectionComp() {
-  const [isAnimate, setisAnimate] = useState(false)
-  useEffect(() => {
-    Aos.init()
-    setisAnimate(true)
-  }, [])
-  console.log(isAnimate)
 
-
+export default function ServicesComp() {
   return (
     <div className="row container d-flex m-auto justify-space-between h-100">
-      <div className="row flex-md-row flex-column-reverse container d-flex  justify-space-between">
-        <div className="col-12  col-md-6 d-flex justify-content-end">
-          <Image
-            src={ProfileImage}
-            width={"100%"}
-            className="bdr-100 w-100 object-fit-contain image-flip"
-            alt="Profile Image"
-          />
-        </div>
-        <div data-aos="flip-left" className="col-12 col-md-6 d-flex flex-column justify-content-center">
+      <div className="row container  d-flex justify-space-between">
+        <div className="col-12  col-md-6 d-flex flex-column justify-content-center">
           <div>
             <h1 className="font-32">
-              As A Designer I Am Good At Fit With Few{" "}
-              <span className="red-text">Skills.</span>
+              What Services I Provde{" "}
+              <span className="red-text"> To My Clients</span> In Here.
             </h1>
-            <ProgressBar animateOnRender={isAnimate} completed={80} />
             <p className="color-gray">
-              All desigener have good skills to make sure satisfied their
-              clints, As a designer I am also specialised few{" "}
-              <span className="red-text">skills.</span>
+              I always want to be able to meet the goals of my clients, I value
+              my services as a designer through my work.{" "}
+              <span className="red-text"> You may like my services.</span>
             </p>
           </div>
           <div className="d-flex justify-content-between">
@@ -63,8 +42,6 @@ export default function SkillsSectionComp() {
               </div>
             </div>
             <div className="col-7">
-              {/* <ProgressBar completed={60} animateOnRender={false} /> */}
-
               <div className="d-flex col-12 my-3 align-items-center">
                 <div className="serviece-icon-circle">
                   <PiDeviceMobileLight />
@@ -83,6 +60,14 @@ export default function SkillsSectionComp() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="col-12  col-md-6 d-flex justify-content-end">
+          <Image
+            src={ProfileImage}
+            width={"100%"}
+            className="bdr-100 w-100 object-fit-contain"
+            alt="Profile Image"
+          />
         </div>
       </div>
     </div>

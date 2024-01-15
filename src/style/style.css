@@ -77,3 +77,39 @@
   border-bottom: 1px solid #df5646;
   transition: 0.5s;
 }
+
+
+/* style for qualification section */
+
+
+.section.active .delay5 {
+  animation-delay: 0.5s;
+}
+
+.section.active .animate-element {
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+}
+.edu-experi-item {
+  display: flex;
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+.edu-experi-item:not(:last-child) .vacancy-content {
+  padding-bottom: 44px;
+}
+.vacancy-content {
+  position: relative;
+  padding-left: 20px;
+}
+.vacancy-content:before {
+  content: "";
+  height: 100%;
+  width: 1px;
+  left: 0;
+  top: -10px;
+  position: absolute;
+  background: #e8e8e8;
+}

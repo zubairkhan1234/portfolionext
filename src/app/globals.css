@@ -1,72 +1,70 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
+@import "bootstrap/dist/css/bootstrap.min.css";
 
 /* white color #ffffff; */
 
 body {
-    background-color: #32324C;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 32px;
+  background-color: #32324c;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
 }
 
 .bg-primary {
-
-    background-color: #32324C !important;
+  background-color: #32324c !important;
 }
 
 .color-white {
-    color: #ffffff;
-    font-family: var(--font-poppins);
+  color: #ffffff;
+  font-family: var(--font-poppins);
 }
 
 .font-Playfair {
-    font-family: var(--font-Playfair)
+  font-family: var(--font-Playfair);
 }
 
 .color-gray {
-    color: #a3a5a7;
-    font-family: var(--font-poppins);
+  color: #a3a5a7;
+  font-family: var(--font-poppins);
 }
 
 .h-100 {
-    height: 100% !important;
+  height: 100% !important;
 }
 
 .red-text {
-    color: #df5646;
+  color: #df5646;
 }
 
 .list-style-none {
-    list-style: none;
+  list-style: none;
 }
 
 .font-32 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .font-18 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .red-hover:hover {
-    color: #df5646;
+  color: #df5646;
 }
 
 .image-flip {
-    transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 
 @media (min-width: 1200px) {
-
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl {
-        max-width: 1280px !important;
-        margin: 0px 50px;
-        padding: 0px 45px;
-    }
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1280px !important;
+    margin: 0px 50px;
+    padding: 0px 45px;
+  }
 }

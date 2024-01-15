@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect } from "react";
-import ProfileImage from "../../assets/containerImages/home-dark.png";
+import ProfileImage from "./../assets/containerImages/home-dark.png";
 import { FaDownload } from "react-icons/fa6";
 import ProgressBar from "@ramonak/react-progress-bar";
 // import { motion } from "framer-motion";
