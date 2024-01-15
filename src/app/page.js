@@ -14,9 +14,9 @@ export default function Home() {
     <>
       <NavBarComp />
       <div className="container-fluid d-flex flex-column justify-content-center">
-        <Qualification />
         <HomeComp />
         <AboutComp />
+        <Qualification />
         <ServicesComp />
         <SkillsSectionComp />
       </div>

@@ -9,7 +9,7 @@ import { GrServerCluster } from "react-icons/gr";
 export default function ServicesComp() {
   return (
     <div className="row container d-flex m-auto justify-space-between h-100">
-      <div className="row container  d-flex justify-space-between">
+      <div className="row  d-flex p-0  justify-space-between">
         <div className="col-12  col-md-6 d-flex flex-column justify-content-center">
           <div>
             <h1 className="font-32">

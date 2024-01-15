@@ -4,51 +4,37 @@ import React, { useEffect } from "react";
 import ProfileImage from "./../assets/containerImages/home-dark.png";
 import { FaDownload } from "react-icons/fa6";
 import ProgressBar from "@ramonak/react-progress-bar";
-// import { motion } from "framer-motion";
-// import Aos from "aos";
+import Aos from "aos";
 export default function AboutComp() {
-  //   useEffect(() => {
-  //     Aos.init();
-  //   }, []);
-  //   const introPictureVariants = {
-  //     hide: {
-  //       opacity: 0,
-  //       x: -500,
-  //     },
-  //     show: {
-  //       opacity: 1,
-  //       x: 0,
-  //       transition: {
-  //         duration: 1,
-  //       },
-  //     },
-  //   };
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div className="row container flex-md-row flex-column-reverse h-100 m-auto  d-flex justify-space-between">
-      {/* <motion.div
-        className="absolute right-0 -bottom-12 w-full sm:w-4/5 md:-bottom-36 md:w-[950px]"
-        initial="hide"
-        whileInView="show"
-        exit="hide"
-        variants={introPictureVariants}
-      > */}
-      <div className="col-12  col-md-6  d-flex justify-content-end">
+      <div
+        data-aos="fade-up-right"
+        data-aos-delay="100"
+        className="col-12  col-md-6  d-flex justify-content-end"
+      >
         <Image
           src={ProfileImage}
           width={"100%"}
           className="bdr-100 w-100 object-fit-contain image-flip"
           alt="Profile Image"
         />
-       
       </div>
       {/* </motion.div> */}
-      <div className="col-12  col-md-6 d-flex flex-column justify-content-center">
+      <div
+        data-aos-delay="100"
+        data-aos="fade-up-left"
+        className="col-12  col-md-6 d-flex flex-column justify-content-center"
+      >
         <h1>HI</h1>
         <h1 className="font-32">
           {" "}
           It's <span className="red-text">Muhammad Zubair</span>{" "}
         </h1>
-        
+
         <p className="font-18 color-white ">
           Currently working for
           <span className="red-text"> web</span> developement

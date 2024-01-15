@@ -10,7 +10,7 @@ import { GrServerCluster } from "react-icons/gr";
 export default function SkillsSectionComp() {
   return (
     <div className="row container d-flex m-auto justify-space-between h-100">
-      <div className="row container d-flex justify-space-between">
+      <div className="row p-0 d-flex justify-space-between">
         <div className="col-6 d-flex justify-content-end">
           <Image
             src={ProfileImage}

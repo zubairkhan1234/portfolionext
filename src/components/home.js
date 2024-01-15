@@ -6,7 +6,6 @@ import ProfileImage from "./../assets/containerImages/home-dark.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Typewriter from "typewriter-effect";
-// import { motion } from "framer-motion";
 import {
   FaLongArrowAltRight,
   FaFacebookF,
@@ -20,19 +19,6 @@ export default function HomeComp() {
     Aos.init();
   }, []);
 
-  //   const introPictureVariants = {
-  //     hide: {
-  //       opacity: 0,
-  //       x: 500,
-  //     },
-  //     show: {
-  //       opacity: 1,
-  //       x: 0,
-  //       transition: {
-  //         duration: 1,
-  //       },
-  //     },
-  //   };
   return (
     <div className="row container d-flex m-auto justify-space-between h-100">
       <div data-aos="flip-left" className="col-12 col-md-6 d-flex flex-column justify-content-center">
