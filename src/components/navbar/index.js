@@ -5,7 +5,7 @@ export default function NavBarComp() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary bg-primary">
             <div className="container-fluid">
-                <a className="navbar-brand text-white" href="#">M_Zubair</a>
+                <a className="navbar-brand text-white fw-medium" href="#">M_Zubair</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -21,19 +21,16 @@ export default function NavBarComp() {
                             <a className="nav-link text-white" href="#">Services</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#">SKill</a>
+                            <a className="nav-link text-white" href="#">Skills</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#">Resume</a>
+                            <a className="nav-link text-white" href="#">Education</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#">Portfolio</a>
+                            <a className="nav-link text-white" href="#">Projects</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#">Testimonials.</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link text-white" href="#">Weapons</a>
+                            <a className="nav-link text-white"  href="#">Testimonials</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link text-white" href="#">Contact</a>

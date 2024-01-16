@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect } from "react";
-import ProfileImage from "./../assets/containerImages/home-dark.png";
 import { FaDownload } from "react-icons/fa6";
 import ProgressBar from "@ramonak/react-progress-bar";
 import Aos from "aos";
@@ -10,23 +9,33 @@ export default function AboutComp() {
     Aos.init();
   }, []);
   return (
-    <div className="row container flex-md-row flex-column-reverse h-100 m-auto  d-flex justify-space-between">
+    <div className="row container flex-md-row flex-column-reverse h-100 m-auto mb-5  d-flex justify-space-between">
+      {/* <div data-aos="fade-up-right"
+        data-aos-delay="100">
+        <span className="section-tag">About</span>
+      </div> */}
       <div
-        data-aos="fade-up-right"
-        data-aos-delay="100"
-        className="col-12  col-md-6  d-flex justify-content-end"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-delay="200"
+        data-aos-easing="ease-in-sine"
+        className="col-12  col-md-6  d-flex justify-content-start align-items-center"
       >
         <Image
-          src={ProfileImage}
-          width={"100%"}
-          className="bdr-100 w-100 object-fit-contain image-flip"
+          src='/images/containerImages/about.png'
+          width={1024}
+          height={1024}
+          className="image-radius image-flip"
           alt="Profile Image"
+          style={{ width: '400px', height: '400px', }}
         />
       </div>
       {/* </motion.div> */}
       <div
-        data-aos-delay="100"
-        data-aos="fade-up-left"
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-delay="200"
+        data-aos-easing="ease-in-sine"
         className="col-12  col-md-6 d-flex flex-column justify-content-center"
       >
         <h1>HI</h1>

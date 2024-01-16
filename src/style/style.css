@@ -1,4 +1,39 @@
+/* .section-tag {
+  background-color: white;
+  color: #32324c;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 75px;
+  border-radius: 2px;
+  position: relative;
+}
+
+.section-tag::before {
+
+  position: absolute;
+  right: 130px;
+  top: 18px;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: white;
+} */
+
 /* style for home section */
+.section-image {
+  color: transparent;
+  height: 450px;
+  width: 450px;
+  border-radius: 15px;
+}
+
+.image-radius {
+  border-bottom-left-radius: 65px;
+  border-bottom-right-radius: 10px;
+}
 
 .red-btn::after {
   content: "";
@@ -43,9 +78,9 @@
 /* style for about sections */
 
 .about-btn {
-  /* font-size: 12px; */
   width: 200px;
 }
+
 .about-btn:hover::after {
   width: 190px;
   opacity: 0.5;
@@ -54,7 +89,7 @@
 /* service section style */
 
 .serviece-icon-circle {
-  background-color: #78add9;
+  /* background-color: #78add9; */
   padding: 10px;
   border-radius: 100%;
   width: 40px;
@@ -65,14 +100,26 @@
   margin-right: 10px;
 }
 
+.serviece-icon-circle-color {
+  background-color: #50636c;
+
+}
+
+.skill-icon-circle-color {
+  background-color: #84a9b6;
+
+}
+
 .serviece-icon-circle:hover {
   background-color: #df5646;
   transition: 0.5s;
 }
+
 .serviece-text-box .color-white {
-    letter-spacing: 1px;
+  letter-spacing: 1px;
 }
-.serviece-icon-circle:hover + .serviece-text-box .color-white {
+
+.serviece-icon-circle:hover+.serviece-text-box .color-white {
   /* Styles for the text when the icon is hovered */
   border-bottom: 1px solid #df5646;
   transition: 0.5s;
@@ -90,20 +137,25 @@
   animation-duration: 0.7s;
   animation-fill-mode: both;
 }
+
 .edu-experi-item {
   display: flex;
 }
+
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
+
 .edu-experi-item:not(:last-child) .vacancy-content {
   padding-bottom: 44px;
 }
+
 .vacancy-content {
   position: relative;
   padding-left: 20px;
 }
+
 .vacancy-content:before {
   content: "";
   height: 100%;

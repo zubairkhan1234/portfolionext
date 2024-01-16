@@ -3,19 +3,37 @@
 /* white color #ffffff; */
 
 body {
-  background-color: #32324c;
+  background-color: black;
+  /* background-color: #32324c; */
   color: #ffffff;
   font-size: 16px;
   font-weight: 300;
   line-height: 32px;
+  overflow-x: hidden;
+}
+
+.font-32 {
+  font-size: 32px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+.font-68 {
+  font-size: 68px;
 }
 
 .bg-primary {
-  background-color: #32324c !important;
+  background-color: black !important;
+  /* background-color: #32324c !important; */
 }
 
 .color-white {
   color: #ffffff;
+  font-family: var(--font-poppins);
+}
+
+.font-poppins {
   font-family: var(--font-poppins);
 }
 
@@ -40,14 +58,6 @@ body {
   list-style: none;
 }
 
-.font-32 {
-  font-size: 32px;
-}
-
-.font-18 {
-  font-size: 18px;
-}
-
 .red-hover:hover {
   color: #df5646;
 }
@@ -58,6 +68,7 @@ body {
 
 
 @media (min-width: 1200px) {
+
   .container,
   .container-lg,
   .container-md,

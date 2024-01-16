@@ -13,13 +13,11 @@ export default function Home() {
   return (
     <>
       <NavBarComp />
-      <div className="container-fluid d-flex flex-column justify-content-center">
-        <HomeComp />
-        <AboutComp />
-        <Qualification />
-        <ServicesComp />
-        <SkillsSectionComp />
-      </div>
+      <HomeComp />
+      <AboutComp />
+      <Qualification />
+      <ServicesComp />
+      <SkillsSectionComp />
     </>
   );
 }

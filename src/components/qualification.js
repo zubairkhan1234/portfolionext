@@ -6,17 +6,21 @@ function Qualification() {
     Aos.init();
   }, []);
   return (
-    <div className="row container d-flex m-auto justify-space-between h-100">
+    <div className="row container d-flex m-auto justify-space-between h-100 mb-5">
+
       <div
         // data-aos="flip-left"
-        className="col-12 col-md-6 d-flex flex-column justify-content-center"
+        className="col-12 col-md-6 d-flex flex-column justify-content-start"
       >
-        <h1 className="font-32 font-Playfair">My Education</h1>
+        {/* <div>
+          <span className="section-tag">Qualification</span>
+        </div> */}
+        <h1 className="font-32 font-Playfair mt-3 mb-5">My Education</h1>
         <div
           data-aos="fade-up"
           className="edu-experi-item animate-element delay5 fadeInUp"
         >
-          <span className="years">2010-2014</span>
+          <span className="years col-2">2010-2014</span>
           <div className="vacancy-content">
             <span className="title">Intermediate</span>
             <h4 className="subject">Commerce</h4>
@@ -34,7 +38,8 @@ function Qualification() {
           // data-aos-delay="100"
           className="edu-experi-item animate-element delay5 fadeInUp"
         >
-          <span className="years">2010-2014</span>
+
+          <span className="years col-2">2010-2014</span>
           <div className="vacancy-content">
             <span className="title">B.com</span>
             <h4 className="subject">Bachaular in Commerce</h4>
@@ -50,14 +55,17 @@ function Qualification() {
       </div>
       <div
         // data-aos="flip-left"
-        className="col-12 col-md-6 d-flex flex-column justify-content-center"
+        className="col-12 col-md-6 d-flex flex-column justify-content-start"
       >
-        <h1 className="font-32 font-Playfair">My Experiance</h1>
+        {/* <div>
+          <span className="section-tag">Experience</span>
+        </div> */}
+        <h1 className="font-32 font-Playfair mt-3 mb-5">My Experience</h1>
         <div
           data-aos="fade-up"
           className="edu-experi-item animate-element delay5 fadeInUp"
         >
-          <span className="years">2010-2014</span>
+          <span className="years col-2">2010-2014</span>
           <div className="vacancy-content">
             <span className="title">BSC</span>
             <h4 className="subject">Computer Science</h4>
@@ -73,7 +81,7 @@ function Qualification() {
           // data-aos-delay="100"
           className="edu-experi-item animate-element delay5 fadeInUp"
         >
-          <span className="years">2010-2014</span>
+          <span className="years col-2">2010-2014</span>
           <div className="vacancy-content">
             <span className="title">BSC</span>
             <h4 className="subject">Computer Science</h4>

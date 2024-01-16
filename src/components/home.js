@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect } from "react";
-import ProfileImage from "./../assets/containerImages/home-dark.png";
 // import { FaDownload } from "react-icons/fa6";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -20,10 +19,16 @@ export default function HomeComp() {
   }, []);
 
   return (
-    <div className="row container d-flex m-auto justify-space-between h-100">
-      <div data-aos="flip-left" className="col-12 col-md-6 d-flex flex-column justify-content-center">
-        <h1 className="font-32 font-Playfair">HI</h1>
-        <h1 className="font-32">
+    <div className="row container d-flex m-auto justify-space-between h-100 mb-5">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="col-12 col-md-6 d-flex flex-column justify-content-center">
+        {/* <div>
+          <span className="section-tag">Home</span>
+        </div> */}
+        <h1 className="font-68 font-Playfair mt-3">HI</h1>
+        <h1 className="font-68  font-Playfair">
           {" "}
           It's <span className="red-text">Muhammad Zubair</span>
         </h1>
@@ -46,8 +51,8 @@ export default function HomeComp() {
             loop: true,
             delay: 90,
             skipAddStyles: false,
-            cursorClassName: "font-32 font-Playfair",
-            wrapperClassName: "font-32 font-Playfair"
+            cursorClassName: "font-32 font-poppins",
+            wrapperClassName: "font-32 font-poppins"
           }}
         />
         <p className="font-18 color-gray">
@@ -71,22 +76,18 @@ export default function HomeComp() {
           </li>
         </ul>
       </div>
-      <div className="col-12 col-md-6 d-flex justify-content-end">
-        {/* <motion.div
-          className="absolute right-0 -bottom-12 w-full sm:w-4/5 md:-bottom-36 md:w-[950px]"
-          initial="hide"
-          whileInView="show"
-          exit="hide"
-          variants={introPictureVariants}
-        > */}
+      <div data-aos="fade-up"
+        data-aos-duration="1000" className="col-12 col-md-6 d-flex justify-content-end align-items-center">
         <Image
-          src={ProfileImage}
-          width={"100%"}
-          className="bdr-100 w-100 object-fit-contain"
+          src='/images/containerImages/home.png'
+          width={1024}
+          height={1024}
+          className="section-image"
           alt="Profile Image"
+
         />
-        {/* </motion.div> */}
       </div>
+      {/* </motion.div> */}
     </div>
   );
 }
