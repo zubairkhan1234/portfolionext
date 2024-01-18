@@ -20,7 +20,7 @@ function Qualification() {
           data-aos="fade-up"
           className="edu-experi-item animate-element delay5 fadeInUp"
         >
-          <span className="years col-2">2010-2014</span>
+          <span className="years col-2 red-text fw-medium">2010-2014</span>
           <div className="vacancy-content">
             <span className="title">Intermediate</span>
             <h4 className="subject">Commerce</h4>
@@ -39,10 +39,10 @@ function Qualification() {
           className="edu-experi-item animate-element delay5 fadeInUp"
         >
 
-          <span className="years col-2">2010-2014</span>
+          <span className="years col-2 red-text fw-medium">2010-2014</span>
           <div className="vacancy-content">
             <span className="title">B.com</span>
-            <h4 className="subject">Bachaular in Commerce</h4>
+            <h4 className="subject">Bachelor in Commerce</h4>
             <h6 className="institution">
               Bachaular in Commerce from University of Karachi Pakistan
             </h6>
@@ -65,7 +65,7 @@ function Qualification() {
           data-aos="fade-up"
           className="edu-experi-item animate-element delay5 fadeInUp"
         >
-          <span className="years col-2">2010-2014</span>
+          <span className="years col-2 red-text fw-medium">2010-2014</span>
           <div className="vacancy-content">
             <span className="title">BSC</span>
             <h4 className="subject">Computer Science</h4>
@@ -81,7 +81,7 @@ function Qualification() {
           // data-aos-delay="100"
           className="edu-experi-item animate-element delay5 fadeInUp"
         >
-          <span className="years col-2">2010-2014</span>
+          <span className="years col-2 red-text fw-medium">2010-2014</span>
           <div className="vacancy-content">
             <span className="title">BSC</span>
             <h4 className="subject">Computer Science</h4>

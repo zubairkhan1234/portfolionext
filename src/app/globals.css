@@ -19,6 +19,7 @@ body {
 .font-18 {
   font-size: 18px;
 }
+
 .font-68 {
   font-size: 68px;
 }
@@ -66,6 +67,23 @@ body {
   transform: scaleX(-1);
 }
 
+
+.slick-dots li button, .slick-dots li button:focus {
+  outline: none !important;
+}
+
+.slick-dots button::before {
+  color: white !important;
+  opacity: 1 !important;
+}
+.slick-dots button:hover::before {
+  color: #df5646 !important;
+  opacity: 1 !important;
+}
+.slick-active button::before {
+  color: #df5646 !important;
+  /* border-color: white !important; */
+}
 
 @media (min-width: 1200px) {
 
