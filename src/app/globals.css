@@ -1,99 +1,26 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+@import "tailwindcss";
 
-/* white color #ffffff; */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
 
 body {
-  background-color: black;
-  /* background-color: #32324c; */
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 32px;
-  overflow-x: hidden;
-}
-
-.font-32 {
-  font-size: 32px;
-}
-
-.font-18 {
-  font-size: 18px;
-}
-
-.font-68 {
-  font-size: 68px;
-}
-
-.bg-primary {
-  background-color: black !important;
-  /* background-color: #32324c !important; */
-}
-
-.color-white {
-  color: #ffffff;
-  font-family: var(--font-poppins);
-}
-
-.font-poppins {
-  font-family: var(--font-poppins);
-}
-
-.font-Playfair {
-  font-family: var(--font-Playfair);
-}
-
-.color-gray {
-  color: #a3a5a7;
-  font-family: var(--font-poppins);
-}
-
-.h-100 {
-  height: 100% !important;
-}
-
-.red-text {
-  color: #df5646;
-}
-
-.list-style-none {
-  list-style: none;
-}
-
-.red-hover:hover {
-  color: #df5646;
-}
-
-.image-flip {
-  transform: scaleX(-1);
-}
-
-
-.slick-dots li button, .slick-dots li button:focus {
-  outline: none !important;
-}
-
-.slick-dots button::before {
-  color: white !important;
-  opacity: 1 !important;
-}
-.slick-dots button:hover::before {
-  color: #df5646 !important;
-  opacity: 1 !important;
-}
-.slick-active button::before {
-  color: #df5646 !important;
-  /* border-color: white !important; */
-}
-
-@media (min-width: 1200px) {
-
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: 1280px !important;
-    margin: 0px 50px;
-    padding: 0px 45px;
-  }
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
 }
