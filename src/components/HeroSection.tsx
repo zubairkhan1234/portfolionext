@@ -23,7 +23,7 @@ export default function HeroSection() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url(/images/Hero_workspace_image_26d3b5c8.png)" }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/80" />
+        <div className="absolute inset-0 bg-[#2d3343]/70" />
       </div>
 
       {/* Content */}
