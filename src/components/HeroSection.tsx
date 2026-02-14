@@ -23,7 +23,7 @@ export default function HeroSection() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url(/images/Hero_workspace_image_26d3b5c8.png)" }}
       >
-        <div className="absolute inset-0 bg-[#2d3343]/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/80" />
       </div>
 
       {/* Content */}
@@ -35,7 +35,7 @@ export default function HeroSection() {
           className="space-y-8"
         >
           <motion.h1 
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground"
+            className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-foreground"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -57,7 +57,7 @@ export default function HeroSection() {
           </motion.p>
 
           <motion.div 
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-10 justify-center items-center mt-20"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -88,7 +88,7 @@ export default function HeroSection() {
 
         {/* Scroll Indicator */}
         <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer"
+          className="absolute bottom-15 left-1/2 transform -translate-x-1/2 cursor-pointer"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
