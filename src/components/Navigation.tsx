@@ -26,9 +26,16 @@ const navItems = [
 ];
 
 export default function Navigation() {
-  const location = useLocation();
+  const [location, setLocation] = useState("/");
+  const [isClient, setIsClient] = useState(false);
+  const [locationHook] = useLocation();
   const { theme, toggleTheme } = useTheme();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+    setLocation(locationHook);
+  }, [locationHook]);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -44,12 +51,12 @@ export default function Navigation() {
             {navItems.map((item) => (
               <Link key={item.href} href={item.href}>
                 <Button
-                  variant={location === item.href ? "secondary" : "ghost"}
+                  variant={isClient && location === item.href ? "secondary" : "ghost"}
                   className="relative"
                   data-testid={`link-nav-${item.label.toLowerCase()}`}
                 >
                   {item.label}
-                  {location === item.href && (
+                  {isClient && location === item.href && (
                     <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-primary rounded-full" />
                   )}
                 </Button>
@@ -96,7 +103,7 @@ export default function Navigation() {
               {navItems.map((item) => (
                 <Link key={item.href} href={item.href}>
                   <Button
-                    variant={location === item.href ? "secondary" : "ghost"}
+                    variant={isClient && location === item.href ? "secondary" : "ghost"}
                     className="w-full justify-start"
                     onClick={() => setIsMobileMenuOpen(false)}
                     data-testid={`link-mobile-nav-${item.label.toLowerCase()}`}
