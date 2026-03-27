@@ -2,20 +2,9 @@
 import { Button } from "@/components/ui/button";
 import { Moon, Sun, Menu, X } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
-
-const useLocation = () => {
-  const [location, setLocation] = useState("/");
-  
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setLocation(window.location.pathname);
-    }
-  }, []);
-  
-  return location;
-};
+import { usePathname } from "next/navigation";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -26,16 +15,9 @@ const navItems = [
 ];
 
 export default function Navigation() {
-  const [location, setLocation] = useState("/");
-  const [isClient, setIsClient] = useState(false);
-  const [locationHook] = useLocation();
+  const pathname = usePathname();
   const { theme, toggleTheme } = useTheme();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-    setLocation(locationHook);
-  }, [locationHook]);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -51,13 +33,13 @@ export default function Navigation() {
             {navItems.map((item) => (
               <Link key={item.href} href={item.href}>
                 <Button
-                  variant={isClient && location === item.href ? "secondary" : "ghost"}
+                  variant={pathname === item.href ? "secondary" : "ghost"}
                   className="relative"
                   data-testid={`link-nav-${item.label.toLowerCase()}`}
                 >
                   {item.label}
-                  {isClient && location === item.href && (
-                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-primary rounded-full" />
+                  {pathname === item.href && (
+                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-accent rounded-full" />
                   )}
                 </Button>
               </Link>
@@ -103,7 +85,7 @@ export default function Navigation() {
               {navItems.map((item) => (
                 <Link key={item.href} href={item.href}>
                   <Button
-                    variant={isClient && location === item.href ? "secondary" : "ghost"}
+                    variant={pathname === item.href ? "secondary" : "ghost"}
                     className="w-full justify-start"
                     onClick={() => setIsMobileMenuOpen(false)}
                     data-testid={`link-mobile-nav-${item.label.toLowerCase()}`}

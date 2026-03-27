@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { QueryProvider } from "@/components/QueryProvider";
+import { HydrationErrorBoundary } from "@/components/HydrationErrorBoundary";
 
 
 
@@ -21,13 +22,15 @@ export default function RootLayout({ children }) {
       <body
         className={`font-body antialiased`}
       >
-        <QueryProvider>
-          <ThemeProvider>
-            <Navigation />
-            {children}
-            <Footer />
-          </ThemeProvider>
-        </QueryProvider>
+        <HydrationErrorBoundary>
+          <QueryProvider>
+            <ThemeProvider>
+              <Navigation />
+              {children}
+              <Footer />
+            </ThemeProvider>
+          </QueryProvider>
+        </HydrationErrorBoundary>
       </body>
     </html>
   );
