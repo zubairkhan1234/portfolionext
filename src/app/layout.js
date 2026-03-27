@@ -1,6 +1,9 @@
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import { QueryProvider } from "@/components/QueryProvider";
 
 
 
@@ -18,10 +21,13 @@ export default function RootLayout({ children }) {
       <body
         className={`font-body antialiased`}
       >
-        <ThemeProvider>
-          <Navigation />
-          {children}
-        </ThemeProvider>
+        <QueryProvider>
+          <ThemeProvider>
+            <Navigation />
+            {children}
+            <Footer />
+          </ThemeProvider>
+        </QueryProvider>
       </body>
     </html>
   );
