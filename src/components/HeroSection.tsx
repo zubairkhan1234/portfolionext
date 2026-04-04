@@ -8,12 +8,14 @@ import Link from "next/link";
 
 export default function HeroSection() {
   const handleDownloadCV = () => {
-    const link = document.createElement('a');
-    link.href = '/cv.pdf';
-    link.download = 'John_Developer_CV.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    if (typeof window !== 'undefined') {
+      const link = document.createElement('a');
+      link.href = '/cv.pdf';
+      link.download = 'John_Developer_CV.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
   };
 
   return (
@@ -93,9 +95,11 @@ export default function HeroSection() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
           onClick={() => {
-            const aboutSection = document.getElementById('about-section');
-            if (aboutSection) {
-              aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (typeof window !== 'undefined') {
+              const aboutSection = document.getElementById('about-section');
+              if (aboutSection) {
+                aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
             }
           }}
         >

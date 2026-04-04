@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import { Link } from "wouter";
+import Link from "next/link";
 import BlogCard from "./BlogCard";
 // import profileImage from "@assets/generated_images/Professional_developer_headshot_76b15bb7.png";
 

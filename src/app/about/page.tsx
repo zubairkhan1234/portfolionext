@@ -3,6 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
+import Image from "next/image";
 // import profileImage from "/images/Professional_developer_headshot_76b15bb7.png";
 
 const skills = [
@@ -60,9 +61,11 @@ export default function About() {
             <Card className="hover-elevate">
               <CardContent className="p-8">
                 <div className="flex flex-col items-center text-center">
-                  <img
+                  <Image
                     src={'/images/Professional_developer_headshot_76b15bb7.png'}
                     alt="Profile"
+                    width={192}
+                    height={192}
                     className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-border"
                     data-testid="img-profile"
                   />

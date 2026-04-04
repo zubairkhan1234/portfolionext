@@ -30,7 +30,9 @@ export default function Footer() {
 
   const handleSocialClick = (href: string, label: string) => {
     console.log(`${label} link clicked`);
-    window.open(href, "_blank");
+    if (typeof window !== "undefined") {
+      window.open(href, "_blank");
+    }
   };
 
   return (

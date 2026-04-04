@@ -1,8 +1,11 @@
+'use client'
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import Image from "next/image";
 import { motion } from "framer-motion";
+import { ExternalLink, Github } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
@@ -25,14 +28,14 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   const handleLiveDemo = () => {
     console.log(`Live demo clicked for ${title}`);
-    if (liveUrl) {
+    if (liveUrl && typeof window !== "undefined") {
       window.open(liveUrl, "_blank");
     }
   };
 
   const handleGithubView = () => {
     console.log(`Github clicked for ${title}`);
-    if (githubUrl) {
+    if (githubUrl && typeof window !== "undefined") {
       window.open(githubUrl, "_blank");
     }
   };
@@ -47,9 +50,11 @@ export default function ProjectCard({
     >
       <Card className="h-full hover-elevate group overflow-hidden">
         <div className="relative overflow-hidden">
-          <img
+          <Image
             src={image}
             alt={title}
+            width={400}
+            height={192}
             className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
             data-testid={`img-project-${index}`}
           />

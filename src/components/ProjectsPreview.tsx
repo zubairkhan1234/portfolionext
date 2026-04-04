@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import { Link } from "wouter";
+import Link from "next/link";
 import ProjectCard from "./ProjectCard";
 // import projectImage1 from "@assets/generated_images/Project_mockup_screenshot_0906e5e0.png";
 // import projectImage2 from "@assets/generated_images/Mobile_app_mockup_01ea5a9a.png";

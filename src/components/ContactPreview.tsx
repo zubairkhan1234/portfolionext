@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail, Phone, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
-import { Link } from "wouter";
+import Link from "next/link";
 
 const contactMethods = [
   {
@@ -29,7 +29,7 @@ const contactMethods = [
 export default function ContactPreview() {
   const handleContactMethod = (href: string, title: string) => {
     console.log(`${title} contact method clicked`);
-    if (href !== "#") {
+    if (href !== "#" && typeof window !== "undefined") {
       window.open(href, "_blank");
     }
   };
@@ -45,10 +45,10 @@ export default function ContactPreview() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4" data-testid="text-contact-preview-title">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-contact-preview-subtitle">
-            Have a project in mind or want to discuss opportunities? I'd love to hear from you.
+            Have a project in mind or want to discuss opportunities? I&apos;d love to hear from you.
           </p>
         </motion.div>
 
@@ -97,7 +97,7 @@ export default function ContactPreview() {
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-8" data-testid="text-contact-preview-cta-description">
                   Whether you have a specific project in mind or just want to explore possibilities, 
-                  I'm here to help bring your ideas to life with clean code and modern design.
+                  I&apos;m here to help bring your ideas to life with clean code and modern design.
                 </p>
                 <Link href="/contact">
                   <Button size="lg" className="w-full sm:w-auto" data-testid="button-contact-preview-get-in-touch">

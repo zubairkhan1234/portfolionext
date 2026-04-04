@@ -108,7 +108,7 @@ export default function Contact() {
             Get In Touch
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-contact-subtitle">
-            Have a project in mind or want to discuss opportunities? I'd love to hear from you.
+            Have a project in mind or want to discuss opportunities? I&apos;d love to hear from you.
           </p>
         </motion.div>
 

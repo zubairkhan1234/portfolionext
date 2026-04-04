@@ -26,11 +26,13 @@ export function ThemeProvider({
   });
 
   useEffect(() => {
-    const root = document.documentElement;
-    root.classList.remove("light", "dark");
-    root.classList.add(theme);
-    if (typeof window !== "undefined") {
-      localStorage.setItem("theme", theme);
+    if (typeof window !== 'undefined') {
+      const root = document.documentElement;
+      root.classList.remove("light", "dark");
+      root.classList.add(theme);
+      if (typeof window !== "undefined") {
+        localStorage.setItem("theme", theme);
+      }
     }
   }, [theme]);
 

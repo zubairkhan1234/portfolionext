@@ -3,8 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Coffee, Lightbulb } from "lucide-react";
 import { motion } from "framer-motion";
-import { Link } from "wouter";
-// import profileImage from "@assets/generated_images/Professional_developer_headshot_76b15bb7.png";
+import Link from "next/link";
+import Image from "next/image";
 
 const highlights = [
   {
@@ -52,9 +52,11 @@ export default function AboutPreview() {
             viewport={{ once: true }}
             className="text-center lg:text-left"
           >
-            <img
+            <Image
               src={'/images/Professional_developer_headshot_76b15bb7.png'}
               alt="John Developer"
+              width={256}
+              height={256}
               className="w-64 h-64 rounded-full object-cover mx-auto lg:mx-0 mb-8 border-4 border-border"
               data-testid="img-about-preview-profile"
             />
