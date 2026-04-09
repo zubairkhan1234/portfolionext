@@ -1,6 +1,6 @@
 'use client'
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, Facebook, Instagram } from "lucide-react";
 
 const socialLinks = [
   {
@@ -13,11 +13,22 @@ const socialLinks = [
     href: "https://www.linkedin.com/in/muhammadzubair0/",
     label: "LinkedIn"
   },
+  // {
+  //   icon: Twitter,
+  //   href: "https://twitter.com/johndeveloper",
+  //   label: "Twitter"
+  // },
   {
-    icon: Twitter,
-    href: "https://twitter.com/johndeveloper",
-    label: "Twitter"
+    icon: Facebook,
+    href: "https://www.facebook.com/zs.develper/",
+    label: "Facebook"
   },
+  {
+    icon: Instagram,
+    href: "https://www.instagram.com/muhammadzubair_0/",
+    label: "Instagram"
+  },
+  
   {
     icon: Mail,
     href: "mailto:zubairsaleem1210@gmail.com",
@@ -45,7 +56,7 @@ export default function Footer() {
               Portfolio
             </h3>
             <p className="text-muted-foreground text-sm" data-testid="text-footer-copyright">
-              © {currentYear} John Developer. All rights reserved.
+              © {currentYear} Muhammad Zubair. All rights reserved.
             </p>
           </div>
 

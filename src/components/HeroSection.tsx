@@ -10,8 +10,8 @@ export default function HeroSection() {
   const handleDownloadCV = () => {
     if (typeof window !== 'undefined') {
       const link = document.createElement('a');
-      link.href = '/cv.pdf';
-      link.download = 'John_Developer_CV.pdf';
+      link.href = '/cv/MUHAMMAD ZUBAIR_Software_Engineer.pdf';
+      link.download = 'MUHAMMAD ZUBAIR_Software_Engineer.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -43,9 +43,17 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             data-testid="text-hero-title"
           >
-            Modern
-            <span className="text-primary"> Developer</span>
+            Muhammad<span className="text-primary">Zubair</span>
           </motion.h1>
+          <motion.h4 
+            className="text-2xl md:text-4xl lg:text-6xl font-serif font-bold text-foreground"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            data-testid="text-hero-title"
+          >
+            Software <span className="text-primary">Engineer</span>
+          </motion.h4>
 
           <motion.p 
             className="text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"

@@ -54,14 +54,14 @@ export default function AboutPreview() {
           >
             <Image
               src={'/images/Professional_developer_headshot_76b15bb7.png'}
-              alt="John Developer"
+              alt="Muhammad Zubair"
               width={256}
               height={256}
               className="w-64 h-64 rounded-full object-cover mx-auto lg:mx-0 mb-8 border-4 border-border"
               data-testid="img-about-preview-profile"
             />
             <h3 className="text-2xl font-serif font-bold text-foreground mb-4" data-testid="text-about-preview-name">
-              John Developer
+              Muhammad Zubair
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-8" data-testid="text-about-preview-bio">
               Full-stack developer with 5+ years of experience creating modern web applications. 

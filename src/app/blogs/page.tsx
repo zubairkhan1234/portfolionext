@@ -11,7 +11,7 @@ const blogPosts = [
     readTime: "8 min read",
     publishDate: "Jan 15, 2024",
     authorAvatar: '/images/Professional_developer_headshot_76b15bb7.png',
-    authorName: "John Developer"
+    authorName: "Muhammad Zubair"
   },
   {
     title: "Mastering CSS Grid and Flexbox Layout",
@@ -20,7 +20,7 @@ const blogPosts = [
     readTime: "12 min read", 
     publishDate: "Jan 10, 2024",
     authorAvatar: '/images/Professional_developer_headshot_76b15bb7.png',
-    authorName: "John Developer"
+    authorName: "Muhammad Zubair"
   },
   {
     title: "Node.js Performance Optimization Techniques",
@@ -29,7 +29,7 @@ const blogPosts = [
     readTime: "15 min read",
     publishDate: "Jan 5, 2024",
     authorAvatar: '/images/Professional_developer_headshot_76b15bb7.png',
-    authorName: "John Developer"
+    authorName: "Muhammad Zubair"
   },
   {
     title: "Introduction to GraphQL with Apollo",
@@ -38,7 +38,7 @@ const blogPosts = [
     readTime: "10 min read",
     publishDate: "Dec 28, 2023",
     authorAvatar: '/images/Professional_developer_headshot_76b15bb7.png',
-    authorName: "John Developer"
+    authorName: "Muhammad Zubair"
   },
   {
     title: "Docker Containerization for Web Apps",
@@ -47,7 +47,7 @@ const blogPosts = [
     readTime: "14 min read",
     publishDate: "Dec 20, 2023",
     authorAvatar: '/images/Professional_developer_headshot_76b15bb7.png',
-    authorName: "John Developer"
+    authorName: "Muhammad Zubair"
   },
   {
     title: "State Management with Zustand",
@@ -56,7 +56,7 @@ const blogPosts = [
     readTime: "7 min read",
     publishDate: "Dec 15, 2023",
     authorAvatar: '/images/Professional_developer_headshot_76b15bb7.png',
-    authorName: "John Developer"
+    authorName: "Muhammad Zubair"
   }
 ];
 

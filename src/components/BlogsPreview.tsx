@@ -15,7 +15,7 @@ const latestPosts = [
     readTime: "8 min read",
     publishDate: "Jan 15, 2024",
     authorAvatar: '/images/Professional_developer_headshot_76b15bb7.png',
-    authorName: "John Developer"
+    authorName: "Muhammad Zubair"
   },
   {
     title: "Mastering CSS Grid and Flexbox Layout",
@@ -24,7 +24,7 @@ const latestPosts = [
     readTime: "12 min read", 
     publishDate: "Jan 10, 2024",
     authorAvatar: '/images/Professional_developer_headshot_76b15bb7.png',
-    authorName: "John Developer"
+    authorName: "Muhammad Zubair"
   }
 ];
 

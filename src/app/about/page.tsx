@@ -70,7 +70,7 @@ export default function About() {
                     data-testid="img-profile"
                   />
                   <h2 className="text-2xl font-serif font-bold text-foreground mb-4" data-testid="text-profile-name">
-                    John Developer
+                    Muhammad Zubair
                   </h2>
                   <p className="text-muted-foreground leading-relaxed" data-testid="text-profile-bio">
                     Passionate full-stack developer with 5+ years of experience creating 
