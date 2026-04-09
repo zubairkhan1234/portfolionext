@@ -77,19 +77,19 @@ export default function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@johndeveloper.com",
-      href: "mailto:hello@johndeveloper.com"
+      value: "zubairsaleem1210@gmail.com",
+      href: "mailto:zubairsaleem1210@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+92 312 2866091",
+      href: "tel:+923122866091"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Karachi, Pakistan",
       href: "#"
     }
   ];

@@ -9,19 +9,19 @@ const contactMethods = [
   {
     icon: Mail,
     title: "Email",
-    description: "hello@johndeveloper.com",
-    href: "mailto:hello@johndeveloper.com"
+    description: "zubairsaleem1210@gmail.com",
+    href: "mailto:zubairsaleem1210@gmail.com"
   },
   {
     icon: Phone,
     title: "Phone",
-    description: "+1 (555) 123-4567",
-    href: "tel:+15551234567"
+    description: "+92 312 2866091",
+    href: "tel:+923122866091"
   },
   {
     icon: MapPin,
     title: "Location",
-    description: "San Francisco, CA",
+    description: "Karachi, Pakistan",
     href: "#"
   }
 ];
